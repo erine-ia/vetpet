@@ -1,0 +1,418 @@
+@font-face {
+    font-family: 'convergence';
+    src: url('../fontes/Convergence-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'moon';
+    src: url('../fontes/Gemini\ Moon.otf');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #fb6f24;vertical-align: center;
+    grid-template-columns: auto;
+    box-shadow: #1c0d05 1px 1px 3px 1px;
+  
+}
+
+.logo img{
+   
+    width: 120px;
+}
+
+nav{
+    display: inline-flex;
+    width: 50%;
+    border:solid#fb6f24;
+    float: right;
+    position: relative;
+    top:-8em;
+    text-align: center;
+    height: 96px;
+   
+    
+    
+    
+}
+
+.menu-item{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 5% 5%;
+   
+    width: 100%;
+    color:white;;
+    font-size: 20px;
+
+
+}
+
+.menu-item:hover{
+    /* background-color: #ddbba9c4; */
+    background-color: white;
+    color: #fb6f24;
+}
+
+
+/* pagina home */
+.cabecalho-home{
+    height: 100vh;
+    background-image:url('../img/header-menor.jpg');
+    background-size:cover;
+    background-position: 25%;
+}
+
+.cabecalho-home h1{
+color:#fb6f24;
+font-family: 'moon';
+font-size: 5em;
+}
+
+.titulo{
+    width: 50%;
+    
+    position: relative;
+    right: 10%;
+    padding-top: 25%;
+}
+
+/* sec-inicio */
+.sec-inicio{
+    display: block;
+}
+
+.blocos-sec-inicio{
+    display: flex;
+
+}
+
+.bloco:hover{
+    /* box-shadow: #fb6f24d1 2px 2px 1px 2px; */
+    color:white;
+    background-color: #fb6f24;
+}
+
+.bloco{
+    text-align: center;
+    width: 30%;
+    border: solid rgba(153, 153, 153, 0.125);
+    margin: auto;
+    border-radius: 5px;
+    padding-bottom: 5%;
+    
+
+   
+}
+
+.subtitulo{
+    padding: 5%;
+    text-align: center;
+}
+.traco{
+    margin: auto;
+    width: 200px;
+    height: 4px;
+    background-color:#64fa3c;
+}
+
+.subtitulo h2{
+    text-align: center;
+    text-transform: uppercase;
+    color:#0e0afa;
+    font-family: 'convergence';
+}
+
+.bloco img{
+    width:50%;
+}
+
+.bloco p{
+    padding: 5% 10%;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bloco h3{
+    color:#fb6f24;
+    font-family: 'convergence';
+}
+
+.bloco h3:hover{
+    color:black;
+}
+
+
+.sec-home-dois{
+    height: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.img-sec-dois{
+    height: 100%;
+    width: 50%;
+}
+
+.img-sec-dois img{
+    width: 100%;
+
+}
+
+.sec-home-dois-txt{
+    width: 50%;
+    float: right;
+    padding-top: 10%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.sec-home-dois-txt p{
+    text-align: justify;
+    padding: 2% 5%;
+    margin-top: 8%;
+    width: 80%;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.btn-sec-dois{
+    padding: 4% 8%;
+    border: solid #64fa3c;
+    margin-top: 5%;
+    font-family: 'convergence';
+    font-size: 1.2em;
+    color: #0e0afa;
+    background-color: transparent;
+}
+
+.btn-sec-dois:hover{
+    background-color: #64fa3c;
+}
+
+.text h3{
+    color:#0e0afa;
+    font-weight: 100;
+    text-transform: uppercase;
+    border-bottom:#fb6f24 solid ;
+    padding-bottom: 5%;
+}
+
+.sec-tres ul{
+    
+}
+
+.sec-tres ul li{
+   list-style: none;
+   border: solid #0e0afa;
+   width: 50%;
+   border-radius: 5px;
+   margin: 2%;
+   text-align: center;
+   padding: 3% 0;
+   font-size: 1em;
+
+}
+
+.sec-tres ul li span{
+    color:#64fa3c;
+
+
+}
+
+.sec-tres ul li:nth-child(even){
+    position: relative;
+    border: solid #fb6f24;
+    border-bottom-right-radius:25px;
+    left: 50%;
+}
+
+.sec-tres ul li:nth-child(odd){
+    border-bottom-left-radius:25px;
+}
+
+[data-anime]{
+    opacity:0;
+    transition:.6s;
+
+
+}
+[data-anime = "left"]{
+    transform:translate3d(-50px, 0, 0);
+
+}
+
+[data-anime = "right"]{
+    transform:translate3d(50px, 0, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(8px, 0 , 0 )
+}
+
+.icon-pata{
+    width: 70px;
+    float: left;
+}
+
+
+
+/* cabecalho*/
+
+.cabecalho{
+    height: 100pxpx;
+    padding-top: 2%;
+    width:100%;
+    display: inline;
+    font-family: 'moon';
+    font-size: 2em;
+    text-align: center;
+    box-shadow: inset #1c0d05 1px 1px 3px 1px ;
+    
+
+}
+
+.cabecalho .container{
+    width: 50%;
+   
+
+}
+
+
+/*contato*/
+.sec-contato{
+    width: 100%;
+    background-color: #0e0afa;
+    box-shadow: #1c0d05  2px -1px 3px 1px;
+}
+.formulario{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+form{
+    width: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+
+}
+
+input, textarea{
+    padding: 2% 5%;
+    width: 100%;
+    margin-bottom: 3%;
+
+}
+
+.btn-enviar{
+    padding: 2% 10%;
+    background-color: white;
+    border:solid #64fa3c;
+    border-radius: 5px;
+    color:#64fa3c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+
+
+}
+
+
+
+
+.cabecalho h2{
+    float: left;
+    padding-top: 5%;
+   
+    
+}
+
+/* Sobre */
+.sobre{
+    text-align: center;
+}
+.sobre h3{
+    font-family: 'moon';
+    font-size: 1.7em;
+    color:#fb6f24;
+    padding-top: 5%;
+}
+.sobre p{
+    text-align: justify;
+    width: 60%;
+    margin: auto;
+    padding: 5% 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color:#444;
+    text-indent: 2%;
+
+}
+
+
+
+.branco{
+    height: 100px;
+}
+
+
+footer{
+    /* background-color:rgb(68, 103, 61); */
+    background-color: #0e0afa;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 7%;
+   display: grid;
+    align-content: center; 
+}
+
+.endereco, .contato, .redes{
+    width: 25%;
+    float: left;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    color:white;
+}
+footer h3{
+    /* color:#0e0afa; */
+    color:yellow;
+    font-family: 'convergence';
+    text-shadow: #0c0a75a1 2px 1px 2px 2px;
+}
+
+footer i{
+    width: 50px;
+    line-height: 40px;
+}
+
+
+
+
+.copy{
+    background-color: #fb6f24;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2%;
+    font-size: 14px;
+    height: 40px;
+    text-align: center;
+    color: white;
+}
